@@ -12,13 +12,13 @@ const Home = () => {
       >
         Welcome to Pizza Joint
       </motion.h2>
-      <motion.Link to="/base">
+      <Link to="/base">
         <motion.button
           animate={{ scale: 1.5 }}
         >
           Create Your Pizza
         </motion.button>
-      </motion.Link>
+      </Link>
     </motion.div>
   )
 }
