@@ -8,17 +8,17 @@ const Home = () => {
       animate={{ rotateZ: 180, opacity: 0.2, marginTop: 200 }}
     >
       <motion.h2 
-        animate={{ x: 100, fontSize: 50, color: '#ff2994' }}
+        animate={{ fontSize: 50, color: '#ff2994', x: 100, y: -100 }}
       >
         Welcome to Pizza Joint
       </motion.h2>
-      <Link to="/base">
+      <motion.Link to="/base">
         <motion.button
           animate={{ scale: 1.5 }}
         >
           Create Your Pizza
         </motion.button>
-      </Link>
+      </motion.Link>
     </motion.div>
   )
 }
