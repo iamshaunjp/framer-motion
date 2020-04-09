@@ -1,25 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <motion.div className="home container"
-      animate={{ rotateZ: 180, opacity: 0.2, marginTop: 200 }}
-    >
-      <motion.h2 
-        animate={{ fontSize: 50, color: '#ff2994', x: 100, y: -100 }}
-      >
+    <div className="home container">
+      <h2>
         Welcome to Pizza Joint
-      </motion.h2>
-      <motion.Link to="/base">
-        <motion.button
-          animate={{ scale: 1.5 }}
-        >
+      </h2>
+      <Link to="/base">
+        <button>
           Create Your Pizza
-        </motion.button>
-      </motion.Link>
-    </motion.div>
+        </button>
+      </Link>
+    </div>
   )
 }
 
