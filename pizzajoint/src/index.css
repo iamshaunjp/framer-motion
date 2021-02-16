@@ -18,7 +18,7 @@ body, ul, h1, h2, h3, p, button, a, div{
   text-decoration: none;
 }
 body{
-  background: rgb(100,0,123);
+  background: #64007b;
   background: radial-gradient(circle, rgba(100,0,123,1) 0%, rgba(62,20,86,1) 100%);
   overflow: hidden;
 }
