@@ -16,6 +16,7 @@ export const containerVariants =  {
     } 
   }
 
+
 export const nextVariants = {
   hidden: {
     x: '-100vw'

@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 
 import { buttonVariants } from '../animations/Animations';
 
+
 const Home = () => {
+
   return (
     <motion.div className="home container"
       initial={{opacity: 0}}
