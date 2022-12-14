@@ -1,28 +1,40 @@
 /* fonts */
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/Quicksand-Light.woff2') format('woff2'),
-      url('/Quicksand-Light.woff') format('woff');
+  font-family: "Quicksand";
+  src: url("/Quicksand-Light.woff2") format("woff2"),
+    url("/Quicksand-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 /* reset & common styles */
-body, ul, h1, h2, h3, p, button, a, div{
+body,
+ul,
+h1,
+h2,
+h3,
+p,
+button,
+a,
+div {
   margin: 0;
   padding: 0;
   color: white;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   letter-spacing: 2px;
   list-style-type: none;
   text-decoration: none;
 }
-body{
-  background: rgb(100,0,123);
-  background: radial-gradient(circle, rgba(100,0,123,1) 0%, rgba(62,20,86,1) 100%);
+body {
+  background: rgb(100, 0, 123);
+  background: radial-gradient(
+    circle,
+    rgba(100, 0, 123, 1) 0%,
+    rgba(62, 20, 86, 1) 100%
+  );
   overflow: hidden;
 }
-button{
+button {
   color: white;
   padding: 10px 30px;
   font-size: 1em;
@@ -33,33 +45,33 @@ button{
   cursor: pointer;
   opacity: 0.7;
 }
-.container{
+.container {
   max-width: 300px;
   margin: 100px auto 40px;
 }
-.container h3{
+.container h3 {
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.container li{
+.container li {
   padding: 10px;
   cursor: pointer;
 }
 
 /* header */
-header{
+header {
   display: flex;
   padding: 40px;
   align-items: center;
 }
-header .title{
+header .title {
   flex-grow: 1;
   margin-left: 20px;
   font-size: 0.6em;
 }
-header h1{
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+header h1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
 }
 header .pizza-svg {
@@ -72,11 +84,11 @@ header .pizza-svg {
 }
 
 /* lists */
-li span.active{
+li span.active {
   font-weight: bold;
 }
-li span.active::before{
-  content: '>';
+li span.active::before {
+  content: ">";
   position: relative;
   top: -2px;
   margin-right: 6px;
@@ -85,22 +97,22 @@ li span.active::before{
 }
 
 /* pages */
-.home h2{
+.home h2 {
   font-size: 2em;
   margin-bottom: 30px;
 }
-.home.container, 
-.order.container{
+.home.container,
+.order.container {
   text-align: center;
   max-width: 800px;
 }
-.home button{
+.home button {
   color: white;
   padding: 15px 30px;
   font-size: 1.6em;
   border: 3px solid white;
   margin: 30px 20px;
 }
-.order p{
+.order p {
   margin: 20px auto;
 }
